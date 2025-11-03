@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffaf7;
+  color: #4b2e1e;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f9d7b7;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4b2e1e;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #b87b4b;
+}
+
+.hero {
+  background: url('images/bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero button {
+  margin-top: 15px;
+  background-color: #f9d7b7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background-color: #b87b4b;
+  color: white;
+}
+
+.menu, .galerie, .contact, .jeu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu .grid, .galerie .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 30px;
+}
+
+.menu .item img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu .item h3 {
+  margin-top: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #f9d7b7;
+  border-radius: 10px;
+}
+
+.contact button {
+  background-color: #b87b4b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f9d7b7;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Jeu de la roue */
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wheel {
+  border: 6px solid #b87b4b;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#spin {
+  background-color: #f9d7b7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#spin:hover {
+  background-color: #b87b4b;
+  color: white;
+}
